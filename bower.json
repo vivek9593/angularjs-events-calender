@@ -23,9 +23,9 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.4",
+    "angular": "~1.4.14",
     "moment": "~2.18.1",
-    "angular-touch": "~1.7.3",
+    "angular-touch": "~1.4.14",
     "jquery": "~3.3.1"
 
   }
