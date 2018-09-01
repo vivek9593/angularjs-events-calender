@@ -125,13 +125,6 @@
         '    </div>',
         '    <div class="adp-day trailingDay" ng-show="mv.trailingDays.length < 7" ng-repeat="day in mv.trailingDays">{{::day}}</div>',
         '  </div>',
-        '  <div class="adp-days" id="adp-time"> ',
-        '    <div class="timeLabelMain"><label class="timeLabel">Time:</label> <span class="timeValue">{{("0"+inputHour).slice(-2)}} : {{("0"+inputMinute).slice(-2)}}</span></div>',
-        '    <div class="hourLabelMain"><label class="hourLabel">Hour:</label> <input class="hourInput" type="range" min="0" max="23" ng-model="inputHour"/></div>',
-        '    <div class="minutesLabelMain"><label class="minutesLabel">Min:</label> <input class="minutesInput" type="range" min="0" max="59" ng-model="inputMinute" /> </div>',
-        '  </div> ',
-        '  <div class="btn flat updateDate full smallest" ng-click="changeDate()" ng-if="triggerButton !== undefined">{{triggerButton !== "true" ?  ' +
-        'triggerButton : "SET"}}</div> ',
         '</div>'].join("\n");
     var datetimePickerPopup = function ($locale, dateFilter) {
         var days, months, daysOfWeek, firstDayOfWeek;
