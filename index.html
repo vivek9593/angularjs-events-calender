@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="angularjs-events-calender.css" />
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/momentjs/moment.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="angularjs-events-calender.js"></script>
+  <script>
+    angular.module('myApp',['angularjs-events-calender', 'ngTouch']);
+    angular.module('myApp').run(function($rootScope) {
+      $rootScope.gmtDate = new Date('2015-01-01 00:00:00 -00:00');
+
+        $rootScope.eventsDate = [
+            '2018-08-03',
+            '2018-08-15',
+            '2018-08-18',
+            '2018-08-20',
+            '2018-08-31',
+            '2018-09-03',
+            '2018-10-15',
+            '2018-11-18',
+            '2018-12-20',
+            '2019-01-31',
+        ];
+        $rootScope.calender = moment().format('YYYY-MM-DD')
+    });
+  </script>
+</head>
+<body ng-app="myApp" ng-init="">
+  <div style="position:relative;">
+    <calender-picker
+            type="text"
+            calender-picker
+            date-format="YYYY-MM-DD"
+            date-only
+            event-date="eventsDate"
+            class="calender"
+    ></calender-picker>
+  </div>
+
+</body>
+</html>

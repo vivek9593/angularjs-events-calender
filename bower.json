@@ -1,0 +1,32 @@
+{
+  "name": "angularjs-events-calender",
+  "main": "angularjs-events-calender.js",
+  "version": "0.1.20",
+  "homepage": "https://github.com/vivek9593/angularjs-events-calender.git",
+  "authors": [
+    "Vivek Kumar <viveksmart5@gmail.com>"
+  ],
+  "description": "Calender for Events",
+  "keywords": [
+    "Angular",
+    "Javascript",
+    "Date",
+    "Datetime",
+    "UI"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "momentjs": "~2.18.1",
+    "angular-touch": "~1.7.3",
+    "jQuery": "~3.3.1"
+
+  }
+}

@@ -1,0 +1,159 @@
+.angularjs-events-calender {
+  color: #333;
+  font: normal 14px sans-serif;
+  border: 1px solid #ddd;
+  display: inline-block;
+  background: #fff;
+}
+.angularjs-events-calender > .adp-month {
+  text-align: center;
+  line-height: 22px;
+  padding: 10px;
+  background: #fcfcfc;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.angularjs-events-calender > .adp-month > button {
+  color: #555;
+  font: normal 14px sans-serif;
+  outline: none;
+  position: absolute;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.angularjs-events-calender > .adp-month > button:hover {
+  color: #333;
+}
+.angularjs-events-calender > .adp-month > button.adp-prev {
+  left: 10px;
+}
+.angularjs-events-calender > .adp-month > button.adp-next {
+  right: 10px;
+}
+.angularjs-events-calender > .adp-days {
+  width: 210px; /* 30 x 7 */
+  margin: 10px;
+  text-align: center;
+}
+.angularjs-events-calender > .adp-days > .adp-day-of-week, .angularjs-events-calender > .adp-days > .adp-day {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid transparent;
+  width: 30px;
+  line-height: 28px;
+  float: left;
+}
+.angularjs-events-calender > .adp-days > .adp-day-of-week {
+  font-weight: bold;
+}
+.angularjs-events-calender > .adp-days > .adp-day:not(.selectable) {
+  opacity: 0.15;
+  cursor: default;
+}
+.angularjs-events-calender > .adp-days > .adp-day.selectable  {
+  cursor: pointer;
+}
+.angularjs-events-calender > .adp-days > .adp-day.selected {
+  background: #e0e0e0;
+}
+.angularjs-events-calender > .adp-days > .adp-day.today {
+  background: #e0e0e0;
+}
+.angularjs-events-calender > .adp-days > .adp-day.selectable:hover {
+  background: #eee;
+}
+.angularjs-events-calender > .adp-days:after {
+  content: '';
+  display: block;
+  clear: left;
+  height: 0;
+}
+
+.angularjs-events-calender input[type=range] {
+  width: 150px;
+}
+
+
+.angularjs-events-calender .btn.flat.updateDate.full.smallest.ng-scope {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: #ddd;
+  cursor: pointer;
+}
+
+
+.angularjs-events-calender.calender {
+  color: #fff;
+  font: normal 14px sans-serif;
+  display: inline-block;
+  background: #111315;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  height: 350px;
+  font-size: 12px;
+}
+.angularjs-events-calender.calender > .adp-month {
+  color: #d5d6d7;
+  border: none;
+  background: #111315;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 22px;
+}
+.angularjs-events-calender.calender > .adp-month .year {
+  color: #29b7d1;
+}
+.angularjs-events-calender.calender > .adp-days {
+  width: 280px;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day-of-week,
+.angularjs-events-calender.calender > .adp-days > .adp-day {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid transparent;
+  width: 30px;
+  line-height: 30px;
+  float: left;
+  margin: 5px;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day.selected {
+  background: #e63c6d;
+  color: #fff;
+  border-radius: 50%;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day {
+  border-radius: 50%;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day:not(.selectable) {
+  opacity: 1;
+  cursor: default;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day.leadingDay:not(.selectable) {
+  opacity: 0.15;
+  cursor: default;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day.trailingDay:not(.selectable) {
+  opacity: 0.15;
+  cursor: default;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day.today {
+  background: #29b7d1;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day-of-week {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day-of-week.Sun {
+  color: #29b7d1 !important;
+}
+.angularjs-events-calender.calender > .adp-days > .adp-day-of-week.Sat {
+  color: #9f261d !important;
+}
+
