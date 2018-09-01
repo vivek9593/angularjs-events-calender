@@ -36,7 +36,7 @@
         };
         this.openDatetimePicker = function (options) {
             this.closeDatetimePicker();
-            var div = angular.element('<div datetime-picker-popup ng-cloak></div>');
+            var div = angular.element('<div calender-picker-popup ng-cloak></div>');
             options.dateFormat && div.attr('date-format', options.dateFormat);
             options.ngModel && div.attr('ng-model', options.ngModel);
             options.year && div.attr('year', parseInt(options.year));
@@ -88,17 +88,17 @@
         };
         this.closeDatetimePicker = function (evt) {
             var target = evt && evt.target;
-            var popupEl = $document[0].querySelector('div[datetime-picker-popup]');
+            var popupEl = $document[0].querySelector('div[calender-picker-popup]');
             if (evt && target) {
-                if (target.hasAttribute('datetime-picker')) {  // element with calenderPicker behaviour
+                if (target.hasAttribute('calender-picker')) {  // element with calenderPicker behaviour
                     // do nothing
                 } else if (popupEl && popupEl.contains(target)) { // calenderPicker itself
                     // do nothing
                 } else {
-                    removeEl(popupEl);
+                    // removeEl(popupEl);
                 }
             } else {
-                removeEl(popupEl);
+                // removeEl(popupEl);
             }
         }
     };
@@ -354,7 +354,7 @@
         };
     };
     datetimePickerPopup.$inject = ['$locale', 'dateFilter'];
-    angular.module('angularjs-events-calender').directive('datetimePickerPopup', datetimePickerPopup);
+    angular.module('angularjs-events-calender').directive('calenderPickerPopup', datetimePickerPopup);
     var calenderPicker = function ($parse, CalenderPicker) {
         return {
             // An ngModel is required to get the controller argument
